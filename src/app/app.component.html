@@ -1,0 +1,63 @@
+<div class="divFondo">
+  <div class="container-fluid p-2 " style="background-color:#3D1F6B;">
+    <div class="row mx-0 px-0">
+      <!--<div *ngFor="let imagena of logoBlanco" class="col-auto"> -->
+      <div class="col-2">
+        <img class="logoBlanco img-fluid" src="{{logoBlanco[0].src}}" alt="{{logoBlanco[0].titulo}}">
+      </div>
+
+      <!--</div> -->
+      <h1 class="col-2 offset-3 text-white text-center align-items-center my-auto" id="titulo">Home</h1>
+    </div>
+  </div>
+  <!--<img src="{{backgroundimg.src}}" id="video">-->
+  <div class="row mx-0 px-0" id="textoHome" >
+    <h1 class="col-6 offset-3 text-white text-center align-items-center my-auto display-1 "><b>Escoge tu estilo</b></h1>
+  </div>
+
+
+  
+  <!--
+  <video autoplay loop muted>
+    <source src="{{background.src}}?v=2" type="video/webm ">
+    Tu navegador no admite la reproducción de videos.
+  </video>
+  -->
+  <div class="row mx-0 px-0" id="tituloContacto" >
+    <h1 class="col-2 offset-1 text-white text-center align-items-center my-auto display-3" id="titulo"><b>Contacto</b>
+    </h1>
+  </div>
+  <div class="row" id="paginaContacto">
+    <div class="row mt-5"></div>
+    <div class="border-0 rounded-5 col-4 offset-1 mt-2 " id="borde">
+      <div class="border-0 rounded-5 col-10 offset-1 mt-5" id="rosa">
+        <div class="row mt-5"></div>
+        <div class="row mt-5"></div>
+        <a href="https://www.instagram.com"><button
+            class="border-0 rounded-5 col-10 offset-1 mt-2 btn btn-outline-light" id="blanco">
+            <img src="{{instagram.src}}" alt="{{instagram.titulo}}" id="insta" class="col-2 offset-0">
+          </button></a>
+        <a href="https://twitter.com/?lang=es"><button
+            class="border-0 rounded-5 col-10 offset-1 mt-4 btn btn-outline-light" id="blanco">
+            <img src="{{twitter.src}}" alt="{{twitter.titulo}}" id="insta" class="col-2 offset-0">
+          </button></a>
+        <a href="https://www.google.com/intl/es/gmail/about/"><button
+            class="border-0 rounded-5 col-10 offset-1 mt-4 btn btn-outline-light" id="blanco">
+            <img src="{{gmail.src}}" alt="{{gmail.titulo}}" id="insta" class="col-2 offset-0">
+          </button></a>
+      </div>
+    </div>
+    <div class="border-0 rounded-circle col-4 offset-1" id="borde2" *ngFor="let item of pageData">
+      <div class="border-0 rounded-circle col-10 offset-1" id="rosa2">
+        <div class="row mt-5"></div>
+        <div class="row mt-5"></div>
+        <h1 class="col-auto  text-white text-center align-items-center my-auto display-3">{{ item.title }}</h1>
+        <p class=" lead col-auto text-white text-center align-items-center my-auto mt-2 p-3">{{ item.description }}</p>
+      </div>
+    </div>
+    <div class="row mt-5"></div>
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>

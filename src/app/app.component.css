@@ -1,0 +1,69 @@
+.logoBlanco {
+    max-height: 120px;
+}
+
+html,
+.divFondo {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/img/123.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+
+/**#video {
+    min-width: 50%;
+    min-height: 50%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}*/
+#tituloContacto{
+    margin-top: 600px;
+}
+#textoHome {
+    margin-top: 250px;
+}
+
+#paginaContacto {
+    height: auto;
+    width: 98%;
+}
+#borde {
+    background-color: #3D1F6B;
+    height: 500px;
+}
+#rosa {
+    background-image: linear-gradient(to bottom, #D200FF, #8508FF) ;
+    height: 400px;
+}
+#blanco {
+    height: 80px;
+}
+
+
+#borde2 {
+    background-color: #3D1F6B;
+    height: 600px;
+    width: 42%;
+    margin-top: -10%;
+}
+
+#rosa2 {
+    background-image: linear-gradient(to bottom, #8508FF, #D200FF) ;
+    height: 500px;
+}
+#insta {
+    max-height: 73px;
+}
+
